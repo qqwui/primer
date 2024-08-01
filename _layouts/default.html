@@ -32,8 +32,8 @@
       <div class="markdown-body container-lg py-3 px-3">
         <div class="columns">
         <div class="column one-half">
-        {%- if site.author.name -%}
-          &copy; {{ "now" | date: "%Y" }} {{ site.author.name | escape }}
+        {%- if site.author -%}
+          &copy; {{ "now" | date: "%Y" }} {{ site.author | escape }}
         {%- else -%}
           &nbsp;
         {%- endif -%}
